@@ -74,6 +74,8 @@ Select * from Customers where  Price=20
 Select avg(Price) as AvgPrice from Customers
 
 --19]
+Select sum(Price) as Product from Customers
+
 
 --20]
 Select * from Customers where City like 'a%'
@@ -88,5 +90,34 @@ Select * from Customers where City like '%a%'
 Select * from Customers where City like '[a-b]'
 
 --24]
+Select * from Customers where City not like 'a%'
+
+--25]
+Select * from Customers where City like '_a%'
+
+--26]
+Select * from Customers where City like '[acs]%'
+--27]
+Select * from Customers where City like '[af]%'
+
+--28]
+Select * from Customers where City like '[!acf]%'
+
+--29]
+Select * from Customers where Country in('Norway','France')
+
+--30]
+Select * from Customers where Country not in('Norway','France')
+
+--31]
+Select * from Customers where Price between 10 and 20
+
+--32]
+Select * from Customers where Price not between 10 and 20
+
+--33]Use the BETWEEN operator to select all the records where the value of the
+--City column is alphabetically between 'London' and 'Avignon'.
 
 
+--35]
+Select * from Customers as Consumer
